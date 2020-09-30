@@ -1,0 +1,108 @@
+body
+{
+  padding:10px 40px;
+  background-color:#2ec1ac;
+}
+.col1 img
+{
+ width:30%;
+ height:10%;
+ margin:5px;
+border:1px solid black;
+}
+.row1
+{
+  background-color:white;
+  margin-top:3%;
+  border-radius:10px;
+  padding:30px;
+  box-shadow:0px 0px 10px 0px #000;
+}
+.price
+{
+ float:right;
+}
+.col3 li
+{ 
+ margin-top:8px;
+}
+.checked 
+{
+  color: orange;
+}
+.rating
+{
+  margin:5px 25px;
+}
+.form-control
+{
+ width:20% !important;
+  margin-right:50px;
+}
+.row2 label
+{
+
+margin:5px 0px 20px 30px ;
+
+}
+.row2
+{  
+  padding:20px;
+}
+ @media only screen and (max-width: 991px) 
+{
+ .spe
+ {
+   display:none;
+ }
+}
+@media only screen and (max-width: 755px) 
+{
+ .col1 img
+ {
+  width:40%;
+  height:8%; 
+ }
+ .row1
+ {
+  padding:15px 0px 0px 0px;
+ } 
+ 
+}
+@media only screen and (max-width: 500px) 
+{
+ .col1 img
+ {
+  width:20%;
+  height:12%; 
+ }
+ #currentImg
+ {
+   width:170%;  
+ }
+ .col3 h4
+ {
+   margin-top:4%;
+   font-size:0.95rem;
+ }
+ .col3 li
+ {
+   
+   font-size:0.81rem;
+ }
+ .cen , .list4 ,.list5
+ {
+   display:none;
+ }
+ 
+}
+@media only screen and (max-width: 500px) 
+{ 
+.row2 h6
+{
+margin:10px 30px 0px 10px;
+} 
+.row2 label
+{
+margin:25px 20px 0px 10px;
+}

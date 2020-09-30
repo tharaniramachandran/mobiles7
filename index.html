@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="first.css" />
+</head>
+<body>
+
+ <div class ="row row1">
+  <div class="col-md   col-3 col1">
+     <img src="img/front-fone.png" class="img-fluid" onmouseover="showImage('front-fone.png')"; >
+     <br>
+     <img src="img/back.png" class="img-fluid" onmouseover="showImage('back.png')"; >
+     <br>
+     <img src="img/backside.png" class="img-fluid" onmouseover="showImage('backside.png')"; >
+     <br>
+     <img src="img/center.png" class="img-fluid cen" onmouseover="showImage('center.png')";>
+     <br>
+  </div>
+
+  <div class="col-md-5  col-lg-6 col-sm-9 col-3 col2">
+    <center> <img id ="currentImg"  src="img/front-fone.png" ></center>
+  </div>
+
+
+  <div class="col-md-6 col-lg-5  col3">
+    <h4>Samsung Galaxy M21  <span class="price">&#x20b9; 11,999</span></h4>  
+    <ul>
+     <li class ="list1">Triple Camera Setup - 48MP (F2.0) Main Camera +8MP (F2.2) Ultra Wide Camera +5MP(F2.2) Depth Camera and 20MP (F2.2) front facing Punch Hole Camera</li>
+     <li class ="list2">6.4-inch Super Amoled - Infinity U Cut Display , FHD+ Resolution (2340 x 1080) , 404 ppi pixel density and 16M color support</li>
+     <li class ="list3">Android 10.0 operating system with Exynos 9611,2.3GHz,1.7GHz Octa-Core processor, 4GB RAM, 64GB internal memory expandable up to 512GB and dual SIM</li>
+     <li class ="list4">6000 mAh Battery</li>
+     <li class ="list5">1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</li>
+     <li class ="list6">Dual SIM,GPS,Music Player,Video Player,FM Radio,Accelerometer,Proximity Sensor,Virtual Light Sensing,E-mail</li>
+    </ul>
+    <div class="rating">
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span>4.0</span>
+    </div>
+  </div> 
+
+
+<div class="row row2">
+     <div class="col-md-12">
+      <div class="form-inline">
+       <div class="dropdown">
+    Model:&nbsp<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Samsung
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Samsung Galaxy M10</a>
+      <a class="dropdown-item" href="#">Samsung Galaxy M20</a>
+      <a class="dropdown-item" href="#">Samsung Galaxy M51</a>
+    </div>
+  </div>
+
+
+      
+     <label for="usr"  >Quantity:&nbsp</label>
+     <input type="text" id="quantity" onkeyup="calc()" class="form-control " id="usr" >     
+       <h6>Price:<span id ="amount"></span></h6>
+    
+ </div>
+</div>
+</div>
+
+</div>
+<script>
+function calc()
+{
+ var qty = document.getElementById("quantity").value;
+ document.getElementById("amount").innerHTML = qty * 11999;
+}
+  function showImage(imgName) 
+{
+   var curImage = document.getElementById('currentImg');
+   var thePath = 'img/';
+   var theSource = thePath + imgName;
+   curImage.src = theSource;
+   curImage.alt = imgName;
+   curImage.title = imgName;   
+}
+</script>
+
+</body>
+</html>
